@@ -1,6 +1,7 @@
 import arcade
 from pyglet.event import EVENT_HANDLE_STATE
 from Car import Car
+from Engines import engines
 
 SCREEN_WIDTH = 1920
 SCREEN_HEIGHT = 1080
@@ -17,6 +18,7 @@ class MyGame(arcade.Window):
         self.camera = arcade.Camera2D()
 
         self.car = Car()
+        self.engine = engines.engineI4()
 
         self.accelerate = False
         self.rear = False
